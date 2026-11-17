@@ -1,4 +1,4 @@
-Write a Python script to process the data in `data/train.csv` and `data/test.csv`.
+Write a Python script to process the data in `data/train.csv` and `data/test.csv`. Assume that the only inputs will be `data/train.csv` or `data/test.csv`.
 
 **The script must:**
 - Take as an argument the name of a file in the `data/` directory and return an error if that file does not exist.
@@ -14,10 +14,3 @@ Write a Python script to process the data in `data/train.csv` and `data/test.csv
     - `SecondClass`: `Pclass != 2` = 0 and `Pclass = 2` = 1
 - Create a `SpouseOnboard` column which is 1 iff exactly two rows exist whose `Name` column has the same last name and first name (disregard the title), but one has `Sex` = `"male"` and the other has `Sex` = `"female"`, otherwise the column's value is 0.
 - Include no other columns than the ones mentioned in the final dataframe. Retain the names of the included columns unless otherwise specified.
-
-**Also follow these additional guidelines:**
-- Use the `pandas` library for this task.
-- First, prefer idiomatic Python and `pandas` code. Second, prefer code clarity over performance.
-- Minimize code comments unless genuinely necessary for context- what a particularly section of code does should be possible to infer just by reading the code.
-- Assume that the only inputs will be `data/train.csv` or `data/test.csv`.
-- The script shall reside in the `scripts/` directory.
